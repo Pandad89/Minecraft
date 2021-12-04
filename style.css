@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "minecraft";
+    src: url(./assets/Minecraft.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+body #sideBar {
+    align-items: center;
+}
+
+/* Landing page */
+
+#landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./img/dirt.jpg);
+    background-size: 4%;
+    width: 100vw;
+    height: 100vh;
+}
+#landing img{
+    padding-bottom: 80px;
+}
+#landing button {
+    width: 150px;
+    height: 71px;
+    padding-top: 11px;
+    font-family: "minecraft";
+    border-radius: 10px;
+    font-size: 36px;
+}
+
+/* Game Board */
+
+#game {
+    display: grid;
+    width: 100vmin;
+    height: 100vmin;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background-color: skyblue;
+}
+#sideBar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center, ;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+    width: 150px;
+    color: white;
+    font-family: 'minecraft';
+    font-size: 1.3rem;
+}
+.tool {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 120px;
+    width: 100px;
+}
+.tool:hover {
+   background-color: blue;
+   border: 1px solid blue;
+}
+
+.inventory{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.content {
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+}
+.content:hover {
+    border: 1px solid blue;
+}
+
+.none:hover{
+    border: 1px solid white;
+}
+
+.cloud {
+    background: white;
+}
+
+.dirt {
+    background: url(./img/dirt.jpg) center center / cover no-repeat;
+}
+
+.dirt:hover {
+    border: 1px solid white;
+}
+
+.grass {
+    background: url(./img/grass.jpg) center center / cover no-repeat;
+}
+
+.grass:hover {
+    border: 1px solid white;
+}
+
+.wood {
+    background: url(./img/wood.jpg) center center / cover no-repeat;
+}
+
+.wood:hover {
+    border: 1px solid white;
+}
+
+.stone {
+    background: url(./img/stone.png) center center / cover no-repeat;
+}
+
+.stone:hover {
+    border: 1px solid white;
+}
+
+.cobblestone {
+    background: url(./img/cobblestone.jpg) center center / cover no-repeat;
+}
+
+.cobblestone:hover {
+    border: 1px solid white;
+}
+
+.leaves {
+    background: url(./img/leaves.png) center center / cover no-repeat;
+}
+
+.leaves:hover {
+    border: 1px solid white;
+    transition: padding 1px 1s;
+}
+
+.active {
+    background-color: blue;
+    border: 1px solid blue;
+}
+/* Inventory */
